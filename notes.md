@@ -1,3 +1,25 @@
+<!-- TOC -->
+* [Presentació](#presentació)
+* [Configuració de l'entorn](#configuració-de-lentorn)
+  * [Recomanable: Visual Studio Code al propi ordinador](#recomanable-visual-studio-code-al-propi-ordinador)
+  * [Menys recomanable: Visual Studio Code online](#menys-recomanable-visual-studio-code-online)
+  * [Podeu utilitzar PyCharm per crear un fitxer HTML](#podeu-utilitzar-pycharm-per-crear-un-fitxer-html)
+  * [Similar a PyCharm, tenim un IDE dedicat a la programació](#similar-a-pycharm-tenim-un-ide-dedicat-a-la-programació)
+* [Creació d'una pàgina web a partir d'HTML bàsic](#creació-duna-pàgina-web-a-partir-dhtml-bàsic)
+  * [Fonaments bàsics sobre HTML](#fonaments-bàsics-sobre-html)
+  * [Posem contingut a la web](#posem-contingut-a-la-web)
+  * [Ara tu](#ara-tu)
+* [Els atributs de les etiquetes](#els-atributs-de-les-etiquetes)
+* [Els salts de línia i els espais en blanc i altres caràcters especials.](#els-salts-de-línia-i-els-espais-en-blanc-i-altres-caràcters-especials)
+* [CSS](#css)
+  * [Selectors CSS dins l'etiqueta `<style>`](#selectors-css-dins-letiqueta-style)
+  * [CSS en línia](#css-en-línia)
+  * [La lògica de les propietats CSS](#la-lògica-de-les-propietats-css)
+  * [Propietats rellevants](#propietats-rellevants)
+* [JavaScript](#javascript)
+  * [Exemple](#exemple)
+<!-- TOC -->
+
 # Presentació
 
 **Hyper Text Markup Language (HTML)** és un llenguatge, però no de programació, sinó de marques. A través de marques o etiquetes es descriu com s'organitza un document.
