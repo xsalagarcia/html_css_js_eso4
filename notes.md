@@ -48,14 +48,19 @@ de forma dinàmica.
 
 ## Menys recomanable: Visual Studio Code online
 
-Es pot utilitzar l'editor Visual Studio Code sense instal·lar-lo, a través del navegador. A l'adreça https://vscode.dev/, però té algunes limitacions. Compte alhora de crear i desar fitxers.
+Es pot utilitzar l'editor Visual Studio Code sense instal·lar-lo, a través del navegador. A l'adreça https://vscode.dev/, però té algunes limitacions. Compte a l'hora de crear i desar fitxers.
 
 ## Podeu utilitzar PyCharm per crear un fitxer HTML
 
 Simplement, crear un nou fitxer i donar-li extensió HTML. Ressalta la sintaxi html i té alguna funcionalitat específica.
 
-## Similar a PyCharm, tenim un IDE dedicat a la programació
+## Similar a PyCharm, tenim un IDE dedicat a la programació web: Webstorm
 
+[WebStorm](https://www.jetbrains.com/webstorm/)
+
+## Utilitzar un editor bàsic com el bloc de notes
+
+I obrir els documents html amb el vostre navegador.
 
 # Creació d'una pàgina web a partir d'HTML bàsic
 
