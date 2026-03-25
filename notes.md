@@ -325,6 +325,29 @@ CSS és simple d'utilitzar però extens i complicat en opcions. Aquí veurem pau
 - `margin`
 ...
 
+## Alinear elements amb flexbox
+
+El mètode [Flexbox](https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox) és una de les formes senzilles d'alinear elements per aconseguir files i columnes i poder maquetar els elements de la web. N'hi ha d'altres però aquest és potent i relativament senzill.
+
+Habitualment, es selecciona un elemnet contenidor i se'l defineix com un contenidor tipus *flex*. Els eelements que conté passen a comportar-se com a elements *flex*. Aquest contenidor se li poden donar altres propietats.
+
+### Propietats del contenidor flex
+
+Aquestes en són les principals:
+
+- `display`: flex; → Tots els elements del contenidor (directes) passaran a comportar-se com a elements flex. El contingut s'estableix d'acord amb el model flexbox.
+- `flex-flow:` row|column  wrap|nowrap ; Resumeix altres 2 instruccions `flex-direction`: Si serà en l'eix x (per defecte, row, eix principal, x, útil per fer columnes) o en l'eix y(column, eix principal y). `flex-wrap` si rebassarà  (nowrap) o no (wrap, força el canvi de línia o columna si no hi caben) al arribar a final (envoltar o no). Eix principial serà x (y secundari y) si és column, i eix principal serà y (i secundari x) si son row. 
+- `justify-content`: flex-start|flex-end|center|space-around|space-evenly|space-between; podem configurar com els elements estan disposats a l'eix primari: alineats a l'inici, alineats al final, centrats, justificats amb espai a inici i final, igual però amb menys als extrems. o justificats arribant als extrems. Respectivament. Està alineat amb el que definim a flex-flow (columna o fila).
+- `align-items`: permet configurar com els elements estan disposats a l'eix secundari.(controla la alineació vertical si hem especificat `flex-flow: row;`). Els valors poden ser els mateixos que els de justify-content, a més de stretch. Si posem stretch ens estirarà els continguts fins als extrems (a no ser que hi haguem especificat alçada o amplada).
+- `align-content`: intervé només quan tenim wrap, i hi ha un salt de línia en l'eix principal. P.ex. quan eix principal és x i tenim dues files; llavors defineix com es comporta la següent fila (eix principal x) o columna (eix principal y).
+
+### propietats dels elements continguts dins un contenidor flex
+
+Aquestes en són les principals:
+`flex-grow`: Com es distribueix espai sobrant que hi pugui haver a la fila(en cas de eix principal x). [0, infinit]. Els números són en proporció de la resta de continguts. P.ex. si tots els elements continguts tinguessin valor 1, tots utilitzarien la resta d'espai disponible a parts iguals. Si varis elements tinguessin 1 i un tingués 0.5, el de 0.5 seria la meitat. Hi hem estat jugant amb exemple 13. El valor per defecte és 0 per tots els continguts, de manera que quan especifiquem un flex-grow diferent a 0 a qualsevol altre element, el element on no hem especificat això
+`flex-shrink`: com es comprimeix l'espai en cas que no hi hagi espai suficient a la fila (en cas de eix principal x) en cas que tinguem nowrap. [0, infinit]. Funciona com el flex-grow, però especifica el comportament dels elements quan es redueixen per intentar cabre a la mateixa lína i no sobrepassar el contenidor. Valor per defecte és 1.
+`flex-basis`: Equivalent al width (el substitueix). És l'ample inicial que li volem donar a la caixa. En px, %...
+
 # JavaScript
 
 Si hem dit que HTML era l'esquelet i CSS la pell, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) podria ser el cervell.
