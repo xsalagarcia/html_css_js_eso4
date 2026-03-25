@@ -4,7 +4,8 @@
   * [Recomanable: Visual Studio Code al propi ordinador](#recomanable-visual-studio-code-al-propi-ordinador)
   * [Menys recomanable: Visual Studio Code online](#menys-recomanable-visual-studio-code-online)
   * [Podeu utilitzar PyCharm per crear un fitxer HTML](#podeu-utilitzar-pycharm-per-crear-un-fitxer-html)
-  * [Similar a PyCharm, tenim un IDE dedicat a la programació](#similar-a-pycharm-tenim-un-ide-dedicat-a-la-programació)
+  * [Similar a PyCharm, tenim un IDE dedicat a la programació web: Webstorm](#similar-a-pycharm-tenim-un-ide-dedicat-a-la-programació-web-webstorm)
+  * [Utilitzar un editor bàsic com el bloc de notes](#utilitzar-un-editor-bàsic-com-el-bloc-de-notes)
 * [Creació d'una pàgina web a partir d'HTML bàsic](#creació-duna-pàgina-web-a-partir-dhtml-bàsic)
   * [Fonaments bàsics sobre HTML](#fonaments-bàsics-sobre-html)
   * [Posem contingut a la web](#posem-contingut-a-la-web)
@@ -16,6 +17,9 @@
   * [CSS en línia](#css-en-línia)
   * [La lògica de les propietats CSS](#la-lògica-de-les-propietats-css)
   * [Propietats rellevants](#propietats-rellevants)
+  * [Alinear elements amb flexbox](#alinear-elements-amb-flexbox)
+    * [Propietats del contenidor flex](#propietats-del-contenidor-flex)
+    * [propietats dels elements continguts dins un contenidor flex](#propietats-dels-elements-continguts-dins-un-contenidor-flex)
 * [JavaScript](#javascript)
   * [Exemple](#exemple)
 <!-- TOC -->
@@ -335,9 +339,9 @@ Habitualment, es selecciona un elemnet contenidor i se'l defineix com un conteni
 
 Aquestes en són les principals:
 
-- `display`: flex; → Tots els elements del contenidor (directes) passaran a comportar-se com a elements flex. El contingut s'estableix d'acord amb el model flexbox.
-- `flex-flow:` row|column  wrap|nowrap ; Resumeix altres 2 instruccions `flex-direction`: Si serà en l'eix x (per defecte, row, eix principal, x, útil per fer columnes) o en l'eix y(column, eix principal y). `flex-wrap` si rebassarà  (nowrap) o no (wrap, força el canvi de línia o columna si no hi caben) al arribar a final (envoltar o no). Eix principial serà x (y secundari y) si és column, i eix principal serà y (i secundari x) si son row. 
-- `justify-content`: flex-start|flex-end|center|space-around|space-evenly|space-between; podem configurar com els elements estan disposats a l'eix primari: alineats a l'inici, alineats al final, centrats, justificats amb espai a inici i final, igual però amb menys als extrems. o justificats arribant als extrems. Respectivament. Està alineat amb el que definim a flex-flow (columna o fila).
+- `display`: `flex`; → Tots els elements del contenidor (directes) passaran a comportar-se com a elements flex. El contingut s'estableix d'acord amb el model flexbox.
+- `flex-flow:` `row|column  wrap|nowrap` ; Resumeix altres 2 instruccions `flex-direction`: Si serà en l'eix x (per defecte, row, eix principal, x, útil per fer columnes) o en l'eix y(column, eix principal y). `flex-wrap` si rebassarà  (nowrap) o no (wrap, força el canvi de línia o columna si no hi caben) al arribar a final (envoltar o no). Eix principial serà x (y secundari y) si és column, i eix principal serà y (i secundari x) si son row. 
+- `justify-content`: `flex-start|flex-end|center|space-around|space-evenly|space-between`; podem configurar com els elements estan disposats a l'eix primari: alineats a l'inici, alineats al final, centrats, justificats amb espai a inici i final, igual però amb menys als extrems. o justificats arribant als extrems. Respectivament. Està alineat amb el que definim a flex-flow (columna o fila).
 - `align-items`: permet configurar com els elements estan disposats a l'eix secundari.(controla la alineació vertical si hem especificat `flex-flow: row;`). Els valors poden ser els mateixos que els de justify-content, a més de stretch. Si posem stretch ens estirarà els continguts fins als extrems (a no ser que hi haguem especificat alçada o amplada).
 - `align-content`: intervé només quan tenim wrap, i hi ha un salt de línia en l'eix principal. P.ex. quan eix principal és x i tenim dues files; llavors defineix com es comporta la següent fila (eix principal x) o columna (eix principal y).
 
