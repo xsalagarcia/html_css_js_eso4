@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            column-gap: 10px;
+            margin: 10px;
+        }
+
+        .div-box-1 {
+            background-color: pink;
+            border: solid;
+            text-align: center;
+            background-image: url("Doraemon_character.png");
+        }
+        .div-box-2 {
+            background-color: aqua;
+            border: solid;
+            height: 50px;
+            
+            transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
+        }
+        .div-box-2:hover{
+            box-shadow: 5px 5px 5px gray;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <!--Usa flex per incloure flex-grow, flex-shrink i flex-basis-->
+        <div class="div-box-1" style="height: auto; padding: 5px; flex-grow: 1;flex-wrap: wrap; flex-basis: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat commodi ad quia aliquid? Inventore maiores enim laborum aliquid, commodi, suscipit ab ex ipsam, obcaecati fuga cupiditate cumque repudiandae reprehenderit.</div>
+        <div class="div-box-1" style="height: auto; padding: 5px; flex-grow: 2;flex-wrap: wrap; flex-basis: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat commodi ad quia aliquid? Inventore maiores enim laborum aliquid, commodi, suscipit ab ex ipsam, obcaecati fuga cupiditate cumque repudiandae reprehenderit.</div>
+        <div class="div-box-1" style="height: auto; padding: 5px; flex-grow: 2;flex-wrap: wrap; flex-basis: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat commodi ad quia aliquid? Inventore maiores enim laborum aliquid, commodi, suscipit ab ex ipsam, obcaecati fuga cupiditate cumque repudiandae reprehenderit.</div>
+    </div>
+    <div class="flex-container">
+        <div class="div-box-2" style="flex-grow: 1;"></div>
+        <div class="div-box-2" style="flex-grow: 2;"></div>
+        <div class="div-box-2" style="flex-grow: 1;"></div>
+    </div>
+    <div class="flex-container">
+        <div class="div-box-3" style="flex: 1 1 0;"><img src="Doraemon_character.png" style="width: 50%; margin: auto; " alt=""></div>
+        <div class="div-box-3" style="flex: 1 1 0;"><img src="Doraemon_character.png" style="width: 50%; margin: auto; " alt=""></div>
+        <div class="div-box-3" style="flex: 1 1 0;"><img src="Doraemon_character.png" style="width: 50%; margin: auto; " alt=""></div>
+        <div class="div-box-3" style="flex: 1 1 0;"><img src="Doraemon_character.png" style="width: 50%; margin: auto; " alt=""></div>
+        <div class="div-box-3" style="flex: 1 1 0;"><img src="Doraemon_character.png" style="width: 50%; margin: auto; " alt=""></div>
+    </div>
+</body>
+
+</html>
