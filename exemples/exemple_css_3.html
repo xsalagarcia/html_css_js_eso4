@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        code {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+
+            &>* {
+                margin: 1rem;
+            }
+        }
+
+        .shadow {
+            box-shadow: 4px 4px 4px;
+            border: solid 1px gray;
+            border-radius: 10px;
+            background-color: antiquewhite;
+        }
+
+        .shadow-transition {
+            transition: box-shadow 0.3s;
+            border: solid 1px gray;
+            border-radius: 10px;
+            background-color: aqua;
+
+
+        }
+
+        .shadow-transition:hover {
+            box-shadow: 4px 4px 4px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Un altre exemple CSS</h1>
+        <p>En aquest exemple es mostren novament columnes, però també altres elements, i fins i tot un efecte d'ombra i
+            variació de mida quan s'enfoca una de les columnes.</p>
+        <p>Totes les columnes estan dins un <code>&lt;div></code>, el qual té l'atribut CSS <code>display</code> amb el
+            valor <code>flex</code>. Això fa els elements immediatament continguts dins el <code>div</code> es mostrin
+            seguin el model <a
+                href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox">flexbox</a>.
+        </p>
+
+        <div class="columns">
+            <div class="shadow">
+                <h2>Les ombres</h2>
+                <p>Les ombres poden ser interiors o exteriors. També podem modificar-ne el color.</p>
+                <p>L'atribut <code>box-shadow</code> serveix per donar ombra a elements que actuen de contenidors, com
+                    ara <code>&lt;p></code> o <code>&lt;div></code>, però també tenim <code>text-shadow</code> <span
+                        style="text-shadow: 1px 1px 4px;">per donar ombra al text.</span>.</p>
+            </div>
+            <div class="shadow-transition">
+                <h2>Les animacions simples</h2>
+                <p>Un element pot "transicionar" de forma suau els seus atributs CSS. Per això s'utilitza l'atribut
+                    <code>transition</code>.</span>. És el cas d'aquesta columna, que apareix l'ombra només quan es
+                    situa el punter del ratolí a sobre.</p>
+            </div>
+            <div class="shadow">
+                <h2>Els selectors CSS</h2>
+                <p>Els selectors poden fer referència:</p>
+                <ul>
+                    <li>Un element, a través del seu nom.</li>
+                    <li>Una classe, a través del nom de la classe precedida per un punt. Les classes s'estableixen amb l'atribut <code>class</code>.</li>
+                    <li>Un identificador, que s'estableix amb l'atribut <code>id</code> al element, i s'hi fa referència amb el caràcter <code>#</code> seguit de l'identificador.</li>
+                    <li>En aquest cas, a aquesta pàgina hi ha un sufix en un dels selectors utilitzats: <code>:hover</code>. Això vol dir que s'aplica el CSS allà contingut sempre que el punter del ratolí estigui soobre l'element.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
